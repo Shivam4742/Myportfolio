@@ -1556,3 +1556,81 @@ section.section-bg {
   color: #fff;
   text-decoration: underline;
 }
+/* =========================
+   Project Initial Cards
+========================= */
+
+.project-initial {
+  height: 240px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    135deg,
+    #1f1f1f,
+    #292929
+  );
+  border-radius: 8px 8px 0 0;
+  overflow: hidden;
+}
+
+.project-initial span {
+  font-size: 72px;
+  font-weight: 800;
+  letter-spacing: 4px;
+  color: #ffffff;
+  opacity: 0.95;
+}
+
+/* Different project initials */
+
+.project-dm span {
+  color: #f2c94c;
+}
+
+.project-pb span {
+  color: #56ccf2;
+}
+
+.project-rt span {
+  color: #bb86fc;
+}
+
+/* Portfolio card */
+
+.portfolio-wrap {
+  background: #222;
+  border-radius: 8px;
+  overflow: hidden;
+  height: 100%;
+  transition: 0.3s;
+}
+
+.portfolio-wrap:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+}
+
+.portfolio-info {
+  padding: 22px;
+}
+
+.portfolio-info h4 {
+  margin-bottom: 10px;
+}
+
+.portfolio-info p {
+  margin-bottom: 10px;
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+  .project-initial {
+    height: 200px;
+  }
+
+  .project-initial span {
+    font-size: 58px;
+  }
+}
